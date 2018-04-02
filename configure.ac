@@ -559,6 +559,12 @@ BFG_DRIVER(,AlcheMist,scrypt,no,[
 	has_asic=yes
 ])
 
+BFG_DRIVER(,FutureBit,scrypt,no,[
+        need_lowl_vcom=yes
+        has_asic=yes
+])
+
+
 BFG_DRIVER(,BitForce,SHA256d,auto,[
 	driverlist="$driverlist bitforce:pci/need_lowl_pci"
 	if test "x$lowl_pci" = "xyes"; then
